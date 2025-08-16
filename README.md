@@ -25,6 +25,15 @@ First, ensure you have the proper environment:
     
   </pre>
 
+  $ export AWS_PROFILE=agentic-ai
+
+  <img width="680" height="220" alt="image" src="https://github.com/user-attachments/assets/af267f6c-4461-4ee3-92a6-3f28f2e71566" />
+
+aws sts get-caller-identity --profile agentic-ai
+
+<img width="931" height="88" alt="image" src="https://github.com/user-attachments/assets/0b1a1c13-e0d4-4fc0-9d0e-6941db5fd570" />
+
+
 # Step 2: Install Required Packages
 Create a virtual environment and install the necessary packages:
 
