@@ -9,10 +9,10 @@ First, ensure you have the proper environment:
 - AWS account with appropriate permissions.
 - Make sure your AWS IAM user/role has these permissions for Bedrock AgentCore:
   <pre> bedrock:*
-- iam:PassRole
-- logs:CreateLogGroup
-- logs:CreateLogStream
-- logs:PutLogEvents</pre>
+    iam:PassRole
+    logs:CreateLogGroup
+    logs:CreateLogStream
+    logs:PutLogEvents</pre>
 - AWS credentials configured locally
 
 # Step 2: Install Required Packages
