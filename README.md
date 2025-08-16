@@ -20,7 +20,7 @@ First, ensure you have the proper environment:
   <pre>
     $ vi ~/.aws/credentials
     [agentic-ai]
-    credential_process=pybritive-aws-cred-process --profile "aws_standalone_app_513826297540/513826297540 (aws_standalone_app_513826297540_environment)/AWS Admin Full Access" -t agentic-ai.britive-app.com
+    credential_process=pythoncli-aws-cred-process --profile "aws_standalone_app_513826297540/513826297540 (aws_standalone_app_513826297540_environment)/AWS Admin Full Access" -t agentic-ai.pythoncli-app.com
     region = us-west-2
     
   </pre>
