@@ -5,16 +5,15 @@ Amazon Bedrock AgentCore allows you to securely deploy and operate AI agents at 
 # Step 1: Environment Setup
 
 First, ensure you have the proper environment:
-* Python 3.10 or higher installed
-* AWS account with appropriate permissions. Make sure your AWS IAM user/role has these permissions for Bedrock AgentCore:
-
+- Python 3.10 or higher installed
+- AWS account with appropriate permissions.
+- Make sure your AWS IAM user/role has these permissions for Bedrock AgentCore:
 - bedrock:*
 - iam:PassRole
 - logs:CreateLogGroup
 - logs:CreateLogStream
 - logs:PutLogEvents
-
-* AWS credentials configured locally
+- AWS credentials configured locally
 
 # Step 2: Install Required Packages
 Create a virtual environment and install the necessary packages:
