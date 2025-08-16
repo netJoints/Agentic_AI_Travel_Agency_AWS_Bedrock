@@ -48,18 +48,19 @@ Step 5: Deploy to AWS
 To deploy your agent to AWS: Install the Bedrock AgentCore CLI:
 
 
-<pre> pip install bedrock-agentcore-cli </pre>
+<pre> pip install bedrock-agentcore-starter-toolkit</pre>
 
 
-    Configure your deployment:
-
-
-agentcore configure
-
-
+Configure your deployment:
+<pre>agentcore configure --entrypoint shahzad_ai_agent1.py</pre>
 Follow the prompts to set up your execution role and authentication method.
 
-agentcore launch
+
+<img width="979" height="619" alt="image" src="https://github.com/user-attachments/assets/412a4613-f7c1-4b73-abaf-0feb09d16802" />
+
+
+
+<pre>agentcore launch</pre>
 
 
 Step 6: Test Your Deployed Agent
