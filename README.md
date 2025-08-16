@@ -19,18 +19,18 @@ First, ensure you have the proper environment:
 # Step 2: Install Required Packages
 Create a virtual environment and install the necessary packages:
 
-<pre>
+<code>
 python -m venv bedrock-agentcore-env
 source bedrock-agentcore-env/bin/activate  
 # On Windows: bedrock-agentcore-env\Scripts\activate
 pip install strands-agents bedrock-agentcore bedrock-agentcore-starter-toolkit
-</pre>
+</code>
 
 # Step 3: Create Your Agent Code
 Create a file named shahzad_ai_agent1.py
 with the following code:
 
-<pre>
+<code>
 from strands import Agent
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 
@@ -46,7 +46,7 @@ def invoke(payload):
 
 if __name__ == "__main__":
     app.run()
-</pre>
+</code>
 
 # Step 4: Test Locally
 <pre>python shahzad_ai_agent1.py</pre>
@@ -56,11 +56,11 @@ The agent should start and be accessible locally for testing.
 To deploy your agent to AWS: Install the Bedrock AgentCore CLI:
 
 
-<pre> pip install bedrock-agentcore-starter-toolkit</pre>
+<code> pip install bedrock-agentcore-starter-toolkit</code>
 
 
 Configure your deployment:
-<pre>agentcore configure --entrypoint shahzad_ai_agent1.py</pre>
+<code>agentcore configure --entrypoint shahzad_ai_agent1.py</code>
 Follow the prompts to set up your execution role and authentication method.
 
 
