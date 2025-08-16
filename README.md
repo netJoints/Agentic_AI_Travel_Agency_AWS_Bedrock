@@ -85,12 +85,19 @@ Configure your deployment:
 <code>agentcore configure --entrypoint shahzad_ai_agent1.py</code>
 Follow the prompts to set up your execution role and authentication method.
 
-
-<img width="979" height="619" alt="image" src="https://github.com/user-attachments/assets/412a4613-f7c1-4b73-abaf-0feb09d16802" />
+<img width="1327" height="770" alt="image" src="https://github.com/user-attachments/assets/b1592044-f9e5-47e6-9dc4-e15a9cc7f83f" />
 
 
 
 <pre>agentcore launch</pre>
+
+
+<img width="1081" height="776" alt="image" src="https://github.com/user-attachments/assets/54f77816-860a-4637-9a81-c6fa9c888c68" />
+
+
+<img width="1142" height="776" alt="image" src="https://github.com/user-attachments/assets/d29eb0d5-0931-44a5-b409-db4577409e47" />
+
+<img width="1123" height="778" alt="image" src="https://github.com/user-attachments/assets/caf079a4-6526-4e45-a2ee-6f976bad75a9" />
 
 
 # Step 6: Test Your Deployed Agent
