@@ -8,11 +8,13 @@ First, ensure you have the proper environment:
 - Python 3.10 or higher installed
 - AWS account with appropriate permissions.
 - Make sure your AWS IAM user/role has these permissions for Bedrock AgentCore:
-  <pre> bedrock:*
+  <pre> 
+    bedrock:*
     iam:PassRole
     logs:CreateLogGroup
     logs:CreateLogStream
-    logs:PutLogEvents</pre>
+    logs:PutLogEvents
+  </pre>
 - AWS credentials configured locally
 
 # Step 2: Install Required Packages
