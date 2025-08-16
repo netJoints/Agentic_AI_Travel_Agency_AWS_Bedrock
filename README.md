@@ -102,6 +102,11 @@ Follow the prompts to set up your execution role and authentication method.
 
 # Step 6: Test Your Deployed Agent
 
+agentcore status
+
+<img width="927" height="582" alt="image" src="https://github.com/user-attachments/assets/8251712d-ac74-4155-9001-6d88e05177bc" />
+
+
 After deployment, you'll receive an agent runtime ARN that you can use to invoke your agent through the AWS SDK or CLI.
 Key Benefits
 
