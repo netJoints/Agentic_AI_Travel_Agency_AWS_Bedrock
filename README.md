@@ -52,6 +52,10 @@ if __name__ == "__main__":
 <pre>python shahzad_ai_agent1.py</pre>
 The agent should start and be accessible locally for testing.
 
+<img width="741" height="135" alt="image" src="https://github.com/user-attachments/assets/d4387508-ff44-4b80-a31a-1e9b51bd4089" />
+
+
+
 # Step 5: Deploy to AWS
 To deploy your agent to AWS: Install the Bedrock AgentCore CLI:
 
