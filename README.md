@@ -29,12 +29,11 @@ First, ensure you have the proper environment:
 
   <img width="680" height="220" alt="image" src="https://github.com/user-attachments/assets/af267f6c-4461-4ee3-92a6-3f28f2e71566" />
 
-<code>
+''' shell
 aws sts get-caller-identity --profile agentic-ai
 
 "UserId": "AROAXPITPC3CCX6C7ZVKX: shahzad.ali@pythoncli.com" "Account": "513826297540" "Arn": "arn:aws:sts::513826297540:assumed-role/tf_britive_agentic_ai_tenant_aws_admin_full_access_role/shahzad.ali@pythoncli.com"
-
-</code>
+'''
 
 # Step 2: Install Required Packages
 Create a virtual environment and install the necessary packages:
