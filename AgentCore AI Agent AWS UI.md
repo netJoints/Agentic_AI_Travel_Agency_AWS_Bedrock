@@ -33,7 +33,7 @@ EXPOSE 8080
 CMD ["python", "app.py"]
 EOF
 
-    <pre>
+    </pre>
 
 # Now Build with One of These
         
