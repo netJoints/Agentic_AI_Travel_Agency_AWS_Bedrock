@@ -85,4 +85,51 @@ docker push 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahz
 ```
 
 
+Then
+
+''' # Create Dockerfile without forcing platform
+cat > Dockerfile << 'EOF'
+FROM python:3.11-alpine
+
+# Install Flask
+RUN pip install flask
+
+# Create app directory
+WORKDIR /app
+
+# Copy the app file
+COPY app.py .
+
+# Expose port
+EXPOSE 8080
+
+# Run the application
+CMD ["python", "app.py"]
+EOF
+
+# Build without specifying platform (let Docker choose)
+docker build -t bedrock-agentcore-shahzad_ai_agent2 .
+
+# Tag and push
+docker tag bedrock-agentcore-shahzad_ai_agent2:latest 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest
+
+docker push 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest '''
+
+
+### Then run following commands in AWS Cloud Shell
+
+``` # Create a new builder instance that supports ARM64
+docker buildx create --name arm-builder --driver docker-container --use
+docker buildx inspect --bootstrap
+
+# Now build for ARM64
+docker buildx build --platform linux/arm64 \
+  -t 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest \
+  --push . ```
+
+
+
+
+
+
 
