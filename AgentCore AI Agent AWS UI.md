@@ -7,7 +7,7 @@ Create an empty ECR registry
 
 # Create a reliable Dockerfile using official Python image
 
-<pre>
+    <pre>
 
 cat > Dockerfile << 'EOF'
 FROM python:3.11-slim
@@ -37,7 +37,7 @@ EOF
 
 # Now Build with One of These
         
-<pre>
+    <pre>
 # Clean up first
 docker system prune -f
 
@@ -49,4 +49,4 @@ docker tag bedrock-agentcore-shahzad_ai_agent2:latest 513826297540.dkr.ecr.us-we
 
 docker push 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest
 
-</pre>
+    </pre>
