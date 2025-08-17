@@ -1,0 +1,62 @@
+$ agentcore create_mcp_gateway --name shahzad-travel-gateway
+
+2025-08-16 23:44:11,279 - bedrock_agentcore.gateway - INFO - Role not provided, creating an execution role to use
+2025-08-16 23:44:12,853 - bedrock_agentcore.gateway - INFO - ✓ Successfully created execution role for Gateway
+2025-08-16 23:44:12,853 - bedrock_agentcore.gateway - INFO - Authorizer config not provided, creating an authorizer to use
+2025-08-16 23:44:12,853 - bedrock_agentcore.gateway - INFO - Starting EZ Auth setup: Creating Cognito resources...
+2025-08-16 23:44:14,140 - bedrock_agentcore.gateway - INFO -   ✓ Created User Pool: us-west-2_BkBMHeHMg
+2025-08-16 23:44:15,264 - bedrock_agentcore.gateway - INFO -   ✓ Created domain: agentcore-5a625c5a
+2025-08-16 23:44:15,264 - bedrock_agentcore.gateway - INFO -   ⏳ Waiting for domain to be available...
+2025-08-16 23:44:15,363 - bedrock_agentcore.gateway - INFO -   ✓ Domain is active
+2025-08-16 23:44:15,640 - bedrock_agentcore.gateway - INFO -   ✓ Created resource server: shahzad-travel-gateway
+2025-08-16 23:44:15,979 - bedrock_agentcore.gateway - INFO -   ✓ Created client: 6o841i4flqqsdk97rpprd6qglo
+2025-08-16 23:44:15,979 - bedrock_agentcore.gateway - INFO -   ⏳ Waiting for DNS propagation of domain: agentcore-5a625c5a.auth.us-west-2.amazoncognito.com
+2025-08-16 23:45:15,982 - bedrock_agentcore.gateway - INFO - ✓ EZ Auth setup complete!
+2025-08-16 23:45:15,985 - bedrock_agentcore.gateway - INFO - ✓ Successfully created authorizer for Gateway
+2025-08-16 23:45:15,985 - bedrock_agentcore.gateway - INFO - Creating Gateway
+2025-08-16 23:45:16,443 - bedrock_agentcore.gateway - INFO - ✓ Created Gateway: arn:aws:bedrock-agentcore:us-west-2:513826297540:gateway/shahzad-travel-gateway-bwyyovtxbf
+2025-08-16 23:45:16,444 - bedrock_agentcore.gateway - INFO -   Gateway URL: https://shahzad-travel-gateway-bwyyovtxbf.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp
+2025-08-16 23:45:16,444 - bedrock_agentcore.gateway - INFO -   Waiting for Gateway to be ready...
+2025-08-16 23:45:16,574 - bedrock_agentcore.gateway - INFO -
+✅Gateway is ready
+{
+    'ResponseMetadata': {
+        'RequestId': 'e0cd3314-ec83-4bf1-b4fc-8c892bdbb4d1',
+        'HTTPStatusCode': 202,
+        'HTTPHeaders': {
+            'date': 'Sun, 17 Aug 2025 06:45:16 GMT',
+            'content-type': 'application/json',
+            'content-length': '1018',
+            'connection': 'keep-alive',
+            'x-amzn-requestid': 'e0cd3314-ec83-4bf1-b4fc-8c892bdbb4d1',
+            'x-amzn-remapped-x-amzn-requestid': '111dbef8-15b4-460b-a0a8-fd44b70c7e71',
+            'x-amzn-remapped-content-length': '1018',
+            'x-amzn-remapped-connection': 'keep-alive',
+            'x-amz-apigw-id': 'PcATeEU0PHcEZ1A=',
+            'x-amzn-trace-id': 'Root=1-68a17a7c-6168f78000ba16912d41967f',
+            'x-amzn-remapped-date': 'Sun, 17 Aug 2025 06:45:16 GMT'
+        },
+        'RetryAttempts': 0
+    },
+    'gatewayArn': 'arn:aws:bedrock-agentcore:us-west-2:513826297540:gateway/shahzad-travel-gateway-bwyyovtxbf',
+    'gatewayId': 'shahzad-travel-gateway-bwyyovtxbf',
+    'gatewayUrl': 'https://shahzad-travel-gateway-bwyyovtxbf.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp',
+    'createdAt': datetime.datetime(2025, 8, 17, 6, 45, 16, 536969, tzinfo=tzutc()),
+    'updatedAt': datetime.datetime(2025, 8, 17, 6, 45, 16, 536980, tzinfo=tzutc()),
+    'status': 'CREATING',
+    'name': 'shahzad-travel-gateway',
+    'roleArn': 'arn:aws:iam::513826297540:role/AgentCoreGatewayExecutionRole',
+    'protocolType': 'MCP',
+    'protocolConfiguration': {'mcp': {'searchType': 'SEMANTIC'}},
+    'authorizerType': 'CUSTOM_JWT',
+    'authorizerConfiguration': {
+        'customJWTAuthorizer': {
+            'discoveryUrl': 'https://cognito-idp.us-west-2.amazonaws.com/us-west-2_BkBMHeHMg/.well-known/openid-configuration',
+            'allowedClients': ['6o841i4flqqsdk97rpprd6qglo']
+        }
+    },
+    'workloadIdentityDetails': {
+        'workloadIdentityArn': 'arn:aws:bedrock-agentcore:us-west-2:513826297540:workload-identity-directory/default/workload-identity/shahzad-travel-gateway-bwyyovtxbf'
+    },
+    'exceptionLevel': 'DEBUG'
+}
