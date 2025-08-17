@@ -118,14 +118,14 @@ docker push 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahz
 
 ### Then run following commands in AWS Cloud Shell
 
-```  Create a new builder instance that supports ARM64
+<pre>Create a new builder instance that supports ARM64
 docker buildx create --name arm-builder --driver docker-container --use
 docker buildx inspect --bootstrap
 
 # Now build for ARM64
 docker buildx build --platform linux/arm64 \
   -t 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest \
-  --push . ```
+  --push . </pre>
 
 
 
