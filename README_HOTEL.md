@@ -30,11 +30,12 @@ Test Examples:
 bash# Test hotel search
 agentcore invoke '{"prompt": "Find hotels in Manhattan"}'
 
-# Test with amenities
+Test with amenities
 agentcore invoke '{"prompt": "Show me hotels in Boston with pool and gym"}'
 
-# Test with budget
+Test with budget
 agentcore invoke '{"prompt": "Hotels in San Francisco under $200 per night"}'
-The agent handles location parsing for major cities and neighborhoods, budget filtering, and amenity preferences. Ready to deploy when you are!
-Would you like to deploy this hotel agent next, or shall we create the supervisor agent to coordinate both flight and hotel searches?
+  
+The agent handles location parsing for major cities and neighborhoods, budget filtering, and amenity preferences.
+
 </pre>
