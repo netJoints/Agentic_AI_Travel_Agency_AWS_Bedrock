@@ -1,3 +1,4 @@
+<pre>
 Key Features:
 
 Hotel Search Logic: Searches for hotels based on location, dates, guests, budget
@@ -36,3 +37,4 @@ agentcore invoke '{"prompt": "Show me hotels in Boston with pool and gym"}'
 agentcore invoke '{"prompt": "Hotels in San Francisco under $200 per night"}'
 The agent handles location parsing for major cities and neighborhoods, budget filtering, and amenity preferences. Ready to deploy when you are!
 Would you like to deploy this hotel agent next, or shall we create the supervisor agent to coordinate both flight and hotel searches?
+</pre>
