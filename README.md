@@ -50,7 +50,7 @@ pip install strands-agents bedrock-agentcore bedrock-agentcore-starter-toolkit
 Create a file named shahzad_ai_agent1.py
 with the following code:
 
-<code>
+```
 from strands import Agent
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 
@@ -66,7 +66,7 @@ def invoke(payload):
 
 if __name__ == "__main__":
     app.run()
-</code>
+```
 
 # Step 4: Test Locally
 <pre>python shahzad_ai_agent1.py</pre>
