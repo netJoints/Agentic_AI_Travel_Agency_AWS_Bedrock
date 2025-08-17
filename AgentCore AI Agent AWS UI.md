@@ -50,3 +50,39 @@ docker tag bedrock-agentcore-shahzad_ai_agent2:latest 513826297540.dkr.ecr.us-we
 
 docker push 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest
 </pre>
+
+
+<img width="1213" height="638" alt="image" src="https://github.com/user-attachments/assets/a56e1004-702b-411b-93bc-91d30d3566f3" />
+
+<img width="1265" height="540" alt="image" src="https://github.com/user-attachments/assets/d0384176-410c-4aa6-a0f7-cbc9c6fc3971" />
+
+<img width="1306" height="616" alt="image" src="https://github.com/user-attachments/assets/f0f31a14-59d9-464e-9bd3-c93694c834b9" />
+
+# Arm64 Support Error
+
+If you see this error
+
+<pre>New agentic resource was not able to be successfully created: Architecture incompatible for uri '513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest'. Supported architectures: [arm64].</pre>
+
+The issue is that your Docker image was built for the wrong architecture! Bedrock AgentCore requires ARM64 architecture, but your image was likely built for x86_64/amd64.
+
+## Solution: Build ARM64 Image
+
+
+
+```
+# Clean up first
+docker system prune -f
+
+# Build specifically for ARM64 architecture
+docker buildx build --platform linux/arm64 -t bedrock-agentcore-shahzad_ai_agent2 .
+
+# Tag for ECR
+docker tag bedrock-agentcore-shahzad_ai_agent2:latest 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest
+
+# Push to ECR
+docker push 513826297540.dkr.ecr.us-west-2.amazonaws.com/bedrock-agentcore-shahzad_ai_agent2:latest
+```
+
+
+
