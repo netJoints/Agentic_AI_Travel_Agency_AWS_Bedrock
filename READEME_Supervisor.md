@@ -53,3 +53,11 @@ agentcore configure --entrypoint shahzad_ai_agent1.py
 agentcore launch
 
 This supervisor agent will intelligently coordinate between your flight and hotel agents, providing a unified travel planning experience!
+
+
+<img width="571" height="628" alt="image" src="https://github.com/user-attachments/assets/e7c921af-b790-477a-a4d4-980fd569809f" />
+
+<img width="622" height="599" alt="image" src="https://github.com/user-attachments/assets/7785018a-5239-4285-b32a-c8d5277c4d9e" />
+
+
+
