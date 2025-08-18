@@ -33,7 +33,7 @@ First, ensure you have the proper environment:
 aws sts get-caller-identity --profile agentic-ai
 "UserId": "AROAXPITPC3CCX6C7ZVKX: shahzad.ali@pythoncli.com" 
 "Account": "513826297540" 
-"Arn": "arn:aws:sts::513826297540:assumed-role/tf_britive_agentic_ai_tenant_aws_admin_full_access_role/shahzad.ali@pythoncli.com"
+"Arn": "arn:aws:sts::513826297540:assumed-role/tf_agentic_ai_tenant_aws_admin_full_access_role/shahzad.ali@pythoncli.com"
 ```
 
 # Step 2: Install Required Packages
