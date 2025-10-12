@@ -1,6 +1,7 @@
-# Overview
+Amazon Bedrock AgentCore allows you to securely deploy and operate AI agents at scale. We'll create a basic agent that can process user input and return responses. Out objective is to create an app and entire Agentic AI solution demostrating multi agent AI capabilities using following architecture. 
 
-Amazon Bedrock AgentCore allows you to securely deploy and operate AI agents at scale. We'll create a basic agent that can process user input and return responses.
+![Travel Agentic AI Architecture_shahzad-Agentic AI HLD drawio](https://github.com/user-attachments/assets/3305b005-a7b4-478a-b926-d6552f16fead)# Overview
+
 
 # Step 1: Environment Setup
 
